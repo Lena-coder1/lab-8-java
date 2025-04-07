@@ -19,3 +19,10 @@ student.studentInfo();
 
 let jsonStudent = JSON.stringify(student);
 console.log(jsonStudent);
+let objectStudent = JSON.parse(jsonStudent);
+console.log(objectStudent);
+
+//part3: using Destructuring Assginment
+
+let scores= [85,92,78,90];
+
