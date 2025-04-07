@@ -36,6 +36,15 @@ console.log("grade1= " + grade1);
 console.log("grade2= " + grade2);
 
 //part4: the spread operator
+let cloneStudent = {...student, gradYear: 2025};
+console.log(cloneStudent);
+
+
+let newCourse = ["english" , "math" , "intoToPython"];
+let mergedCourse= [...cloneStudent.course, ...newCourse];
+cloneStudent.course = mergedCourse;
+
+console.log(cloneStudent);
 
 
 
