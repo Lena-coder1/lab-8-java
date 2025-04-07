@@ -71,3 +71,11 @@ let modStudent = {
 modStudent.newcourse(" web design ");
 modStudent.studentInfo();
 modStudent.totalCourse();
+
+//bonus 
+
+let grades= [85,92,78,90];
+let [grd1, grd2, grd3, grd4]=grades;
+let gradeAvg =(grd1+grd2+grd3+grd4)/grades.length;
+
+console.log("grade average is:" + gradeAvg);
