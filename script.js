@@ -46,5 +46,28 @@ cloneStudent.course = mergedCourse;
 
 console.log(cloneStudent);
 
+// part 5: object methods
 
+let modStudent = {
+    name:"lena",
+    age: 31,
+    enrolled: true,
+    course:[" javascript ", " database ", " operatingSystem "],
+    newcourse:function(courseName){
+       
+        this.course.push(courseName);
+        console.log ("new course list: " + this.course);
+    },
+    totalCourse:function(){
+        let amount= this.course.length;
+       console.log("the amount of courses " + this.name + " is taking = "+ amount);
+    },
+    studentInfo:function() {
+      console.log("hi my name is " + this.name + "\n"+ "Enrolled ? " + this.enrolled +"\n" +" in the following classes"+this.course+"\n");
 
+    }
+
+};
+modStudent.newcourse(" web design ");
+modStudent.studentInfo();
+modStudent.totalCourse();
